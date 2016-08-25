@@ -1,0 +1,28 @@
+{
+	"ProjectName": "ns-hello-world-ts-self",
+	"ProjectGuid": "{8f1079cc-8c32-4007-93c4-a4413530ef28}",
+	"projectVersion": 1,
+	"AppIdentifier": "com.telerik.nshelloworldtsself",
+	"DisplayName": "ns-hello-world-ts-self",
+	"Author": "",
+	"Description": "ns-hello-world-ts-self",
+	"BundleVersion": "1.0",
+	"AndroidVersionCode": "1",
+	"iOSDeviceFamily": [
+		"1",
+		"2"
+	],
+	"iOSBackgroundMode": [],
+	"ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+	"AndroidPermissions": [
+		"android.permission.INTERNET"
+	],
+	"DeviceOrientations": [
+		"Portrait",
+		"Landscape"
+	],
+	"AndroidHardwareAcceleration": "true",
+	"iOSStatusBarStyle": "Default",
+	"FrameworkVersion": "2.1.0",
+	"Framework": "NativeScript"
+}

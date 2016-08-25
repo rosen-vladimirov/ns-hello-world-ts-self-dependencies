@@ -35,3 +35,15 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+
+# JavaScript files should not be commited in TypeScript project.
+*.js
+*.js.map
+
+# AppBuilder specific files and directories
+**/.ab/*
+.abreferences.d.ts
+*.apk
+*.ipa
+*.zip
