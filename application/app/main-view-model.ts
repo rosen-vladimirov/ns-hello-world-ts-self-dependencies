@@ -1,8 +1,8 @@
 import observable = require("data/observable");
+import * as _ from "underscore";
 
 export class HelloWorldModel extends observable.Observable {
 
-    private _counter: number;
     private _message: string;
 
     get message(): string {
@@ -19,20 +19,14 @@ export class HelloWorldModel extends observable.Observable {
         super();
 
         // Initialize default values.
-        this._counter = 42;
         this.updateMessage();
     }
 
     private updateMessage() {
-        if (this._counter <= 0) {
-            this.message = "Hoorraaay! You unlocked the NativeScript clicker achievement!";
-        } else {
-            this.message = this._counter + " taps left";
-        }
+        this.message = `Today is ${_.now()}. Underscore generates random number for you: ${_.random(0, 100)}.`;
     }
 
     public onTap() {
-        this._counter--;
         this.updateMessage();
     }
 }
