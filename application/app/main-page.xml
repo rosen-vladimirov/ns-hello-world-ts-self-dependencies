@@ -3,5 +3,15 @@
     <Label text="Tap the button" class="title"/>
     <Button text="TAP" tap="{{ onTap }}" />
     <Label text="{{ message }}" class="message" textWrap="true"/>
+    <ScrollView>
+    <Repeater items="{{ animals }}">
+      <Repeater.itemsLayout>
+        <WrapLayout />
+      </Repeater.itemsLayout>
+      <Repeater.itemTemplate>
+        <Label text="{{ name }}" margin="10" />
+      </Repeater.itemTemplate>
+    </Repeater>
+  </ScrollView>
   </StackLayout>
 </Page>
