@@ -3755,7 +3755,7 @@ declare module _ {
 		* @param object Check if this object is a DOM element.
 		* @return True if `object` is a DOM element, otherwise false.
 		**/
-        isElement(object: any): object is Element;
+        isElement(object: any): boolean;
 
 		/**
 		* Returns true if object is an Array.
